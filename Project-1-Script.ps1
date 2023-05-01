@@ -1,10 +1,20 @@
 # Project_1 Script that prompts the user to enter a file path, reads the contents of the file, and displays a message indicating whether the file contains text or not in a table:
 
-# Prompt the user to enter a directory path
-$dirPath = Read-Host "Enter a directory path"
+while ($true) {
+    $dir = Read-Host "Enter a directory path"
+    if (Test-Path $dir -PathType Container) {
+        # Code to execute if directory exists goes here
+        Write-Host "Directory exists"
+        break
+    }
+    else {
+        # Code to execute if directory does not exist goes here
+        Write-Host "Directory does not exist"
+    }
+}
 
 # Get all files in the directory
-$files = Get-ChildItem -Path $dirPath -Recurse -File
+$files = Get-ChildItem -Path $dir -Recurse -File
 
 # Create an array to store the table data
 $tableData = @()
