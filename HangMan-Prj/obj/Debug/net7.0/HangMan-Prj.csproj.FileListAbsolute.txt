@@ -1,0 +1,15 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\bin\Debug\net7.0\HangMan-Prj.exe
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\bin\Debug\net7.0\HangMan-Prj.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\bin\Debug\net7.0\HangMan-Prj.runtimeconfig.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\bin\Debug\net7.0\HangMan-Prj.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\bin\Debug\net7.0\HangMan-Prj.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\refint\HangMan-Prj.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\HangMan-Prj.genruntimeconfig.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\HangMan-prj\obj\Debug\net7.0\ref\HangMan-Prj.dll
