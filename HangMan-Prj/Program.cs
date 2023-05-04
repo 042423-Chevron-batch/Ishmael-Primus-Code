@@ -1,4 +1,4 @@
-﻿// Hangman game
+// Hangman game
 
         // Declare the word to match
         string wordToMatch = "cat";
@@ -23,46 +23,58 @@
             Console.WriteLine($"You have {numTries} tries remaining.");
             
             // Prompt the user to enter a character
-            Console.Write("Enter a character: ");
-            char inputChar = Console.ReadKey().KeyChar;
-            Console.WriteLine();
+            Console.WriteLine("Enter a 'l' for a letter or a 'w' for a word: ");
+            string choice = Console.Readline;
+            if (choice == "w") {
+                Console.WriteLine("Enter a word: ");
+                string word = Console.Readline;
+                word == wordToMatch;
+                Console.WriteLine("You win! ")
+            }
+            else if (choice == "l") {
+                Console.WriteLine("Enter a letter for a word: ")
+                char inputChar = Console.ReadKey().KeyChar;
+                Console.WriteLine();
             
-            // Check if the input character matches any character in the word
-            bool foundMatch = false;
-            for (int j = 0; j < wordArray.Length; j++)
-            {
-                if (inputChar == wordArray[j])
+                 // Check if the input character matches any character in the word
+                bool foundMatch = false;
+                for (int j = 0; j < wordArray.Length; j++)
                 {
-                    matches[j] = inputChar;
-                    foundMatch = true;
+                    if (inputChar == wordArray[j])
+                    {
+                        matches[j] = inputChar;
+                        foundMatch = true;
+                }
+            
+                // Display the matches so far
+                 Console.WriteLine(matches);
+            
+                // If a match was found, display a message
+                if (foundMatch)
+                {
+                    Console.WriteLine($"The character {inputChar} was found.");
+                }
+            
+                // Check if the word has been completely matched
+                 if (new string(matches) == wordToMatch)
+                 {
+                     wordMatched = true;
+                    Console.WriteLine("Congratulations, you matched the word!");
+                }
+            
+                 // Decrement the number of tries
+                numTries--;
+        
+                 // If the word was not matched, display a message
+                if (!wordMatched)
+                {
+                    Console.WriteLine($"You did not match the word \"{wordToMatch}\".");
+                    }
                 }
             }
-            
-            // Display the matches so far
-            Console.WriteLine(matches);
-            
-            // If a match was found, display a message
-            if (foundMatch)
-            {
-                Console.WriteLine($"The character {inputChar} was found.");
+            else {
+                 Console.WriteLine("Invalid choice: ")
+                 }
             }
-            
-            // Check if the word has been completely matched
-            if (new string(matches) == wordToMatch)
-            {
-                wordMatched = true;
-                Console.WriteLine("Congratulations, you matched the word!");
-            }
-            
-            // Decrement the number of tries
-            numTries--;
-        }
-        
-        // If the word was not matched, display a message
-        if (!wordMatched)
-        {
-            Console.WriteLine($"You did not match the word \"{wordToMatch}\".");
-        }
-        
         Console.WriteLine("Press any key to exit.");
         Console.ReadKey();
