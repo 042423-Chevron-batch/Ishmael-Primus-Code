@@ -54,5 +54,5 @@ jobs:
         with:
           app-name: 'ishmaelsapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_ba22a39161844910ba3664c2479e7758 }}
+          publish-profile: ${{ secrets.Ishmael_Primus_Azure_Profile_Secret }}
           package: .
