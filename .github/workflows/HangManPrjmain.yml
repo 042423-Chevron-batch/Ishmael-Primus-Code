@@ -20,6 +20,10 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: HangMan-Prj/Dockerfile
+          context: HangMan-Prj/
+          file: HangMan-Prj/Dockerfile
+          builder: docker/buildx:latest
           push: true
           tags: ishmaelprimus/hangman:0.0.1
+          platforms: linux/amd64,linux/arm64
+
