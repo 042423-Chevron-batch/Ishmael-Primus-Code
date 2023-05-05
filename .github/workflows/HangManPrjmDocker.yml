@@ -3,7 +3,7 @@ name: HangMan Project Docker Build and Push
 on:
   push:
     branches: main
-/
+
 jobs:
   login:
     runs-on: ubuntu-latest
