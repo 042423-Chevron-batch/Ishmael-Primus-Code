@@ -22,7 +22,7 @@ jobs:
         with:
           context: HangMan-Prj/
           file: HangMan-Prj/Dockerfile
-          builder: docker/buildx:latest
+          builder: docker/buildx:1.2.1
           push: true
           tags: ishmaelprimus/hangman:0.0.1
           platforms: linux/amd64,linux/arm64
