@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/dotnet/sdk:latest
+# Dockerfile is an instruction sheet to create docker image
+WORKDIR /app
+COPY HangMan-Prj.csproj .
+COPY HangMan-Prj.csproj HangMan-Prj.csproj
+
+# Build the app
+Run dotnet publish -o dist
+
+# When you do docker run, run this executable 
+# Equivalent to going "dotnet dist/HelloWorld.dll" on terminal
+CMD ["dotnet", "dist/HangMan-Prj.dll"]

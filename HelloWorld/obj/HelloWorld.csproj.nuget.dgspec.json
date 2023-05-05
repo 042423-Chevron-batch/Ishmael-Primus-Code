@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\HangMan-Prj\\HangMan-Prj.csproj": {}
+    "C:\\Users\\ishma\\Trainer_Code\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\HangMan-Prj\\HangMan-Prj.csproj": {
+    "C:\\Users\\ishma\\Trainer_Code\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\HangMan-Prj\\HangMan-Prj.csproj",
-        "projectName": "HangMan-Prj",
-        "projectPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\HangMan-Prj\\HangMan-Prj.csproj",
+        "projectUniqueName": "C:\\Users\\ishma\\Trainer_Code\\HelloWorld\\HelloWorld.csproj",
+        "projectName": "HelloWorld",
+        "projectPath": "C:\\Users\\ishma\\Trainer_Code\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\ishma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\HangMan-Prj\\obj\\",
+        "outputPath": "C:\\Users\\ishma\\Trainer_Code\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
