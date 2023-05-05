@@ -23,7 +23,3 @@ jobs:
           context: .
           push: true
           tags: ishmaelprimus/hangman:0.0.1
-        env:
-          DOCKER_BUILDKIT: 1
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
