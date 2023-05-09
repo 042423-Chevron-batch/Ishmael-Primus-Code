@@ -1,16 +1,16 @@
 void countApplesAndOranges(int s, int t, int a, int b, int apples_count, int* apples, int oranges_count, int* oranges) {
  int apple_count = 0, orange_count = 0;
     
-  /* 
-   * int s: starting point of Sam's house
-   * int t: ending point of Sam's house
-   * int a: location of the apple tree
-   * int b: location of the orange tree
-   * int apples_count: number of apples thrown
-   * int* apples: array containing the distances at which each apple falls from the tree
-   * int oranges_count: number of oranges thrown
-   * int* oranges: array containing the distances at which each orange falls from the tree
-  */
+/* 
+ * int s: starting point of Sam's house
+ * int t: ending point of Sam's house
+ * int a: location of the apple tree
+ * int b: location of the orange tree
+ * int apples_count: number of apples thrown
+ * int* apples: array containing the distances at which each apple falls from the tree
+ * int oranges_count: number of oranges thrown
+ * int* oranges: array containing the distances at which each orange falls from the tree
+*/
     
     // count the number of apples that fall within the house range
     for (int i = 0; i < apples_count; i++) {
@@ -31,4 +31,4 @@ void countApplesAndOranges(int s, int t, int a, int b, int apples_count, int* ap
     // print the counts
     printf("%d\n%d", apple_count, orange_count);
 }
-This implementation counts the number of apples and oranges that fall within the house range, and then prints the counts.
+//This implementation counts the number of apples and oranges that fall within the house range, and then prints the counts.
