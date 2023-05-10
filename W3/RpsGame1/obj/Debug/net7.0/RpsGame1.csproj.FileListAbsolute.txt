@@ -1,0 +1,15 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\bin\Debug\net7.0\RpsGame1.exe
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\bin\Debug\net7.0\RpsGame1.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\bin\Debug\net7.0\RpsGame1.runtimeconfig.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\bin\Debug\net7.0\RpsGame1.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\bin\Debug\net7.0\RpsGame1.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\refint\RpsGame1.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\RpsGame1.genruntimeconfig.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\W3\RpsGame1\obj\Debug\net7.0\ref\RpsGame1.dll
