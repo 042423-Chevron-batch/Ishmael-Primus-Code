@@ -28,7 +28,7 @@ namespace RpsGame1
                 if (userChoice == "R" && compChoice.ToString().Equals("P"))
                 {
                     // Computer wins
-                    Console.WriteLine($"Doh! {name}, bruh... The computer won");
+                    Console.WriteLine($"Dang! {name}, bruh... The computer won");
                     compWins++;
                 }
                 else if (userChoice == "S" && compChoice.ToString().Equals("P"))
@@ -36,6 +36,11 @@ namespace RpsGame1
                     // User wins
                     Console.WriteLine($"YAAAAS!!! {name}, bruh... The user won");
                     userWins++;
+                }
+                else if (userChoice != "R" && userChoice != "P" && userChoice != "S")
+                {
+                    // Invalid input
+                    Console.WriteLine("Invalid input! Please select R, P, or S.");
                 }
                 else
                 {
