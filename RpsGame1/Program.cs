@@ -33,6 +33,10 @@ class Program
         int ties = 0;
         Choices userChoiceEnum;
 
+        User user = new User(string.Join(" ", personDataArr));
+        LoggerService logger = new LoggerService("log.txt");
+        logger.LogWrongChoice(user, userChoiceEnum);
+
         // create the game classe.
         List<Game> games = new List<Game>();
         Game game = new Game();
@@ -170,13 +174,14 @@ class Program
                 //Console.WriteLine($"This is the YES statement");
                 if (!File.Exists("GameStorage.txt"))
                 {
-                    // File.Create("GameStorage.txt");
-                    // if empty, save the game to a List<Game> and write to the file.
-                    List<Game> gameAsList = new List<Game>();
-                    gameAsList!.Add(game);// '!' means that I know that the variable my be null. I want to DEREFERENCE it anyway
-                    string gameSerialized = JsonSerializer.Serialize(gameAsList);
-                    // write the serialized list of games ot the file.
-                    File.WriteAllText("GameStorage.txt", gameSerialized);
+                    // // File.Create("GameStorage.txt");
+                    // // if empty, save the game to a List<Game> and write to the file.
+                    // List<Game> gameAsList = new List<Game>();
+                    // gameAsList!.Add(game);// '!' means that I know that the variable my be null. I want to DEREFERENCE it anyway
+                    // string gameSerialized = JsonSerializer.Serialize(gameAsList);
+                    // // write the serialized list of games ot the file.
+                    // File.WriteAllText("GameStorage.txt", gameSerialized);
+
                 }
                 else
                 {
