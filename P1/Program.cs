@@ -1,4 +1,4 @@
-﻿// May 13th Update: Work on creating/implementing a list for the items listed in each store 
+﻿// May 15th TODO create prototype implementing the created classes
 using System;
 
 namespace P1
