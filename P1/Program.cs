@@ -19,9 +19,15 @@ namespace P1
             // start the app
             do
             {
+                try
+                {
                 Console.WriteLine(
-                    "Thank you. Please choose a store from the list:\n S. Sugarland\n W. Woodlands\n C. Cypress"
-                );
+                "Thank you. Please choose a store from the list:\n S. Sugarland\n W. Woodlands\n C. Cypress");
+                }
+                catch (IndexOutOfRangeException ex)
+                {
+                    Console.WriteLine($"There was an exception => {ex.Message}");
+                }
 
                 string? userChoice = null;
                 int wrong = 0;
