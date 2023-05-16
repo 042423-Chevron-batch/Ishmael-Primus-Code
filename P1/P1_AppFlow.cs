@@ -48,9 +48,9 @@ namespace P1
             string st1 = st.ToUpper();
             if (st1 != "")
             {
-                if (st1[0].Equals('R')) { return Choices.ROCK; }
-                else if (st1[0].Equals('P')) { return Choices.PAPER; }
-                else if (st1[0].Equals('S')) { return Choices.SCISSORS; }
+                if (st1[0].Equals('S')) { return Choices.Sugarland; }
+                else if (st1[0].Equals('W')) { return Choices.Woodlands; }
+                else if (st1[0].Equals('C')) { return Choices.Return; }
             }
             return null;
         }
