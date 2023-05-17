@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 /// <summary>
-/// SET PUBLIC CLASS
+/// SET PUBLIC CLASS FOR INVENTORY
+/// THE METHODS ARE NAME, PRICE, QUANTITY 
 /// </summary>
 public class Inventory
 {
@@ -83,7 +84,7 @@ public class Inventory
 /// </summary>
     public void PrintInventory()
     {
-        Console.WriteLine("Grocery List:");
+        Console.WriteLine("Inventory List:");
         foreach (InventoryItem item in items)
         {
             Console.WriteLine($"Item: {item.Name}\tPrice: {item.Price}\tQuantity: {item.Quantity}\tTotal: {item.TotalPrice()}");

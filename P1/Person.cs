@@ -7,13 +7,12 @@ namespace P1
 {
     public class Person
     {
-        private static long currentId = 0;
+
 
         public Person() { }
 
         public Person(string fname, string lname)
         {
-            this.PersonId = GenerateUniqueId();
             this.Fname = fname;
             this.Lname = lname;
         }
@@ -48,12 +47,6 @@ namespace P1
         }
 
         public string Lname { get; set; }
-
-        private static long GenerateUniqueId()
-        {
-            currentId++;
-            return currentId;
-        }
     }
 }
 
