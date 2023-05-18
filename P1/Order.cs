@@ -9,6 +9,10 @@ namespace P1
     public class Order
     {
         public Guid OrderId { get; set; } = Guid.NewGuid();
-        public DateTime AppDate { get; set; } = DateTime.Now;
+        public Customers Customer { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
+        public Stores Store { get; set; }
+        public Locations Location { get; set; }
+
     }
 }
