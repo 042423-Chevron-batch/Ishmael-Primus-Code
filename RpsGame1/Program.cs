@@ -33,9 +33,9 @@ class Program
         int ties = 0;
         Choices userChoiceEnum;
 
-        User user = new User(string.Join(" ", personDataArr));
+        Names names = new User(string.Join(" ", personDataArr));
         LoggerService logger = new LoggerService("log.txt");
-        logger.LogWrongChoice(user, userChoiceEnum);
+        logger.LogWrongChoice(names, userChoiceEnum);
 
         // create the game classe.
         List<Game> games = new List<Game>();

@@ -14,9 +14,9 @@ namespace P1
     // ex. an integer has valid values of 1, 22, 43, 786, but NOT 34.1
     public enum Choices
     {
-        Sugarland = 0,
-        Woodlands = 1,
-        Cypress = 2,
+        Walmart = 0,
+        Kroger = 1,
+        HEB = 2,
 
     }
 }

@@ -12,7 +12,7 @@ namespace P1
 
             // divide the string delimited by a space
             string[] namesArr = names!.Split(' ');
-            char Sugarland = 'S';
+            char Walmrt = 'S';
             char Woodlands = 'W';
             char Cypress = 'C';
 
@@ -36,7 +36,7 @@ namespace P1
                     if (wrong > 0)
                     {
                         Console.WriteLine(
-                            "Please follow directions. Please choose a store from the list:\n S. Sugarland\n W. Woodlands\n C. Cypress"
+                            "Please follow directions. Please choose a store from the list:\n W. Walamrt\n K. Kroger\n H. HEB"
                         );
                     }
                     userChoice = Console.ReadLine()?.ToUpper();
@@ -46,19 +46,19 @@ namespace P1
                 );
 
                 // Perform individual actions if either store is selected
-                if (userChoice == "S" && Sugarland.ToString().Equals("S"))
+                if (userChoice == "W" && Walmrt.ToString().Equals("S"))
                 {
-                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Sugarland was selected");
+                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Walmart was selected");
                     break;
                 }
-                else if (userChoice == "W" && Woodlands.ToString().Equals("W"))
+                else if (userChoice == "K" && Kroger.ToString().Equals("K"))
                 {
-                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Woodlands was selected");
+                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Kroger was selected");
                     break;
                 }
-                else if (userChoice == "C" && Cypress.ToString().Equals("C"))
+                else if (userChoice == "H" && HEB.ToString().Equals("H"))
                 {
-                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Cypress was selected");
+                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, HEB was selected");
                     break;
                 }
                 else
