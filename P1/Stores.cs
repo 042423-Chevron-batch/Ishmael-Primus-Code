@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace P1
 {
-    public class Stores
+    // An enum is as user-defined data type.
+    // ex. an integer has valid values of 1, 22, 43, 786, but NOT 34.1
+    public enum Stores
     {
-        public string Store { get; set;  }
-        // a constructor is public, it is the name of of the class, it has a body where setup actions are done.
-        public Stores(string store)
-        {
-            Store = store;
-        }
+        Walmart = 0,
+        Kroger = 1,
+        HEB = 2,
     }
 }
