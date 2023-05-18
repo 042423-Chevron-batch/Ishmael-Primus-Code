@@ -3,29 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+//  Defines a Customer class with properties for the first name (Fname) and last name (Lname). 
+// The first name property has a custom validation that throws a FormatException if the name length is less than 4 characters.
 namespace P1
 {
-    public class Person
+    public class Customer
     {
 
+        public Customer() { }
 
-        public Person() { }
-
-        public Person(string fname, string lname)
+        public Customer(string fname, string lname)
         {
             this.Fname = fname;
             this.Lname = lname;
         }
 
-        public long PersonId { get; private set; }
 
         private string fname;
         public string Fname
         {
-            get
-            {
-                return fname;
-            }
+            get { return fname; }
             set
             {
                 try
@@ -49,4 +47,3 @@ namespace P1
         public string Lname { get; set; }
     }
 }
-

@@ -3,8 +3,3 @@ C:\Users\Ish\Documents\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.G
 C:\Users\Ish\Documents\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfoInputs.cache
 C:\Users\Ish\Documents\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfo.cs
 C:\Users\Ish\Documents\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.csproj.CoreCompileInputs.cache
-C:\Users\ishma\Revature\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.csproj.AssemblyReference.cache
-C:\Users\ishma\Revature\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ishma\Revature\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfoInputs.cache
-C:\Users\ishma\Revature\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.AssemblyInfo.cs
-C:\Users\ishma\Revature\Ishmael-Primus-Code-\RpsGame1\obj\Debug\net7.0\RpsGame1.csproj.CoreCompileInputs.cache
