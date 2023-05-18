@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-<<<<<<< HEAD
 namespace P1
 {
     public class Inventory
@@ -36,94 +35,126 @@ namespace P1
             quantity = 8;
 
         }
-=======
-/// <summary>
-/// SET PUBLIC CLASS FOR INVENTORY
-/// THE METHODS ARE NAME, PRICE, QUANTITY 
-/// </summary>
-public class Inventory
-{
-    public string Name { get; set; }
-    public decimal Price { get; set; }
-    private int quantity;
-
-    public int Quantity
-    {
-        get { return quantity; }
-        set { quantity = value; }
     }
-
-    public Inventory(string name, decimal price, int quantity)
+    public class BreadInventory
     {
-        Name = name;
-        Price = price;
-        Quantity = quantity;
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public BreadInventory()
+        {
+            store  = Stores.Walmart;
+            product = new Products("BREAD", 8, "ORGANIC BREAD");
+            quantity = 5;
+
+        }
     }
-
-    public decimal TotalPrice()
+    public class CerealInventory
     {
-        return Price * Quantity;
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public CerealInventory()
+        {
+            store  = Stores.Walmart;
+            product = new Products("CEREAL", 8, "GMO CEREAL");
+            quantity = 3;
+
+        }
     }
-}
-
-/// <summary>
-/// INVENTORY LIST
-/// </summary>
-public class Inventory
-{
-    private List<Inventory> items;
-
-    public Inventory()
+    public class IcecreamInventory
     {
-        items = new List<Inventory>();
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public IcecreamInventory()
+        {
+            store  = Stores.Kroger;
+            product = new Products("ICECREAM", 7, "ORGANIC ICECREAM");
+            quantity = 5;
+
+        }
     }
-
-/// <summary>
-/// ADD ITEM TO THE LIST
-/// </summary>
-/// <param name="name"></param>
-/// <param name="price"></param>
-/// <param name="quantity"></param>
-    public void AddItem(string name, decimal price, int quantity)
+    public class PizzaInventory
     {
-        Inventory item = new InventoryItem(name, price, quantity);
-        items.Add(item);
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public PizzaInventory()
+        {
+            store  = Stores.Kroger;
+            product = new Products("PIZZA", 8, "CHEESE PIZZA");
+            quantity = 11;
+
+        }
     }
-
-/// <summary>
-/// REMOVE ITEM FROM THE LIST
-/// </summary>
-/// <param name="item"></param>
-    public void RemoveItem(Inventory item)
+    public class CakeInventory
     {
-        items.Remove(item);
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public CakeInventory()
+        {
+            store  = Stores.Kroger;
+            product = new Products("CAKE", 12, "CHOCLATE CAKE");
+            quantity = 8;
+
+        }
+    }
+    public class SaladInventory
+    {
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public SaladInventory()
+        {
+            store  = Stores.HEB;
+            product = new Products("SALAD", 4, "CHICKEN SALAD");
+            quantity = 3;
+
+        }
+    }
+    public class ChickenInventory
+    {
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public ChickenInventory()
+        {
+            store  = Stores.HEB;
+            product = new Products("CHICKEN", 12, "BBQ CHICKEN");
+            quantity = 12;
+
+        }
+    }
+    public class FishInventory
+    {
+        public Stores store { get; set; }
+        public Products product { get; set; }
+        public int quantity { get; set; }
+
+
+        public FishInventory()
+        {
+            store  = Stores.HEB;
+            product = new Products("FISH", 18, "RED SNAPPER");
+            quantity = 15;
+
+        }
     }
     
-/// <summary>
-/// TOTAL PRICE OF EACH TIME
-/// </summary>
-/// <returns></returns>
-    public decimal CalculateTotalPrice()
-    {
-        decimal totalPrice = 0;
-        foreach (InventoryItem item in items)
-        {
-            totalPrice += item.TotalPrice();
-        }
-        return totalPrice;
-    }
-
-/// <summary>
-/// PRINT INVENTORY NAME,PRICE,QUANTITY AND TOTAL PRICE
-/// </summary>
-    public void PrintInventory()
-    {
-        Console.WriteLine("Inventory List:");
-        foreach (InventoryItem item in items)
-        {
-            Console.WriteLine($"Item: {item.Name}\tPrice: {item.Price}\tQuantity: {item.Quantity}\tTotal: {item.TotalPrice()}");
-        }
-        Console.WriteLine($"Total Price: {CalculateTotalPrice()}");
->>>>>>> main
-    }
 }
