@@ -10,7 +10,7 @@ namespace P1
         private static List<App> AllApps { get; set; } = new List<App>();
 
         /// <summary>
-        /// send a string with player fname, lname, and ID-name separated by a space.
+        /// send a string with player fname, lname, separated by a space.
         /// </summary>
         /// <param name="x"></param>
         /// <returns></returns>
@@ -24,7 +24,7 @@ namespace P1
             }
             else
             {
-                return new Customer(xx[0], xx[1]);
+                return new Customer(xx[0]);
             }
         }
 
@@ -47,9 +47,9 @@ namespace P1
                 {
                     return Stores.Kroger;
                 }
-                else if (st1[0].Equals('h'))
+                else if (st1[0].Equals('H'))
                 {
-                    return Stores.Return;
+                    return Stores.HEB;
                 }
             }
             return null;
