@@ -7,12 +7,15 @@ namespace P1
 {
     // An enum is as user-defined data type.
     // ex. an integer has valid values of 1, 22, 43, 786, but NOT 34.1
+    // enum for stores 
     public enum Stores
     {
         Walmart = 0,
         Kroger = 1,
         HEB = 2,
     }
+
+    // enum for locations of stores (value doesnt need to be defined, default will be in place)
     public enum Locations
     {
         Sugarland,
@@ -20,6 +23,8 @@ namespace P1
         Richmond
     }
 
+    //  A class called "WalmartSugarland" that stores information about a Walmart store located in Sugarland. It has properties for the store name, location, and inventory of different products such as milk, bread, and cereal.
+    //  The constructor method initializes these properties with default values. 
     public class WalmartSugarland
     {
         public Stores Store { get; set; }
@@ -41,6 +46,8 @@ namespace P1
         }
     }
 
+    //  A class called "KrogerRichmond" that stores information about a Kroger store located in Sugarland. It has properties for the store name, location, and inventory of different products such as ice-cream, pizza, and cake.
+    //  The constructor method initializes these properties with default values. 
     public class KrogerRichmond
     {
         public Stores Store { get; set; }
@@ -62,6 +69,8 @@ namespace P1
         }
     }
 
+    // A class called "HEBKaty" that stores information about HEB store located in Katy. It has properties for the store name, location, and inventory of different products such as salad, chicken, and fish.
+    //  The constructor method initializes these properties with default values. 
     public class HEBKaty
     {
         public Stores Store { get; set; }

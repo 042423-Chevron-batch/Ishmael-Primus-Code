@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// A class called "Inventory" that stores information about a product's inventory in a store. 
+// It has properties for the product name, store name, price, and quantity. 
 namespace P1
 {
     public class Inventory
@@ -21,6 +23,8 @@ namespace P1
         }
     }
 
+    //  A class called "MilkInventory" that stores information about the inventory of milk products.
+    //  It has properties for the store name, the milk product itself (including its name, price, and description), and the quantity of milk available.
     public class MilkInventory
     {
         public Stores store { get; set; }
@@ -36,6 +40,9 @@ namespace P1
 
         }
     }
+
+    // A class called "BreadInventory" that stores information about the inventory of bread products.
+    // It has properties for the store name, the bread product itself (including its name, price, and description), and the quantity of bread available.
     public class BreadInventory
     {
         public Stores store { get; set; }
@@ -51,6 +58,8 @@ namespace P1
 
         }
     }
+    // A class called "CerealInventory" that stores information about the inventory of cereal products. 
+    // It has properties for the store name, the cereal product itself (including its name, price, and description), and the quantity of cereal available.
     public class CerealInventory
     {
         public Stores store { get; set; }
@@ -66,6 +75,9 @@ namespace P1
 
         }
     }
+
+    // A class called "IcecreamInventory" that stores information about the inventory of icecreamproducts. 
+    // It has properties for the store name, the icecream product itself (including its name, price, and description), and the quantity of icecream available.
     public class IcecreamInventory
     {
         public Stores store { get; set; }
@@ -81,6 +93,9 @@ namespace P1
 
         }
     }
+
+    // A class called "PizzaInventory" that stores information about the inventory of pizza products.
+    // It has properties for the store name, the pizza product itself (including its name, price, and description), and the quantity of pizza available.
     public class PizzaInventory
     {
         public Stores store { get; set; }
@@ -96,6 +111,9 @@ namespace P1
 
         }
     }
+
+    // A class called "CakeInventory" that stores information about the inventory of cake products. 
+    //It has properties for the store name, the milk product itself (including its name, price, and description), and the quantity of cake available.
     public class CakeInventory
     {
         public Stores store { get; set; }
@@ -111,6 +129,9 @@ namespace P1
 
         }
     }
+
+    // A class called "SaladInventory" that stores information about the inventory of salad products.
+    // It has properties for the store name, the salad product itself (including its name, price, and description), and the quantity of salad available.
     public class SaladInventory
     {
         public Stores store { get; set; }
@@ -126,6 +147,9 @@ namespace P1
 
         }
     }
+
+    //A class called "ChickenInventory" that stores information about the inventory of chicken. 
+    // It has properties for the store name, the chicken product itself (including its name, price, and description), and the quantity of chicken available.
     public class ChickenInventory
     {
         public Stores store { get; set; }
@@ -141,6 +165,9 @@ namespace P1
 
         }
     }
+
+    // A class called "FishInventory" that stores information about the inventory of fish products. 
+    // It has properties for the store name, the fish product itself (including its name, price, and description), and the quantity of fish available.
     public class FishInventory
     {
         public Stores store { get; set; }
