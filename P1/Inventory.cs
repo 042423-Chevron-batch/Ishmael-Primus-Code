@@ -7,17 +7,14 @@ namespace P1
 {
     public class Inventory
     {
-        public Products product { get; set; }
-        public Stores store { get; set; }
-        public Products price { get; set; }
-        public int Quantity { get; set; }
+        public Dictionary<Product, int> Products { get; set; }
 
-        public Inventory(Products product, Stores store, Products price, int quantity)
+        public Store Store { get; set; }
+
+        public Inventory(Store store)
         {
-            Products = product;
-            Stores = store;
-            Products = price;
-            Quantity = quantity;
+            Store = store;
+            Products = new Dictionary<Product, int>();
         }
     }
 
