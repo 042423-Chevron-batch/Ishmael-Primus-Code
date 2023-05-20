@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// The Inventory class includes a property Products of type Dictionary<Product, int>, 
+// where Product represents the product and int represents the quantity.
 namespace P1
 {
     public class Inventory
@@ -18,19 +20,4 @@ namespace P1
         }
     }
 
-    public class MilkInventory
-    {
-        public Stores store { get; set; }
-        public Products product { get; set; }
-        public int quantity { get; set; }
-
-
-        public MilkInventory()
-        {
-            store  = Stores.Walmart;
-            product = new Products("MILK", 10, "ORGANIC MILK");
-            quantity = 8;
-
-        }
-    }
 }
