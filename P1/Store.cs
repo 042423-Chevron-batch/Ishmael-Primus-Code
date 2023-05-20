@@ -5,14 +5,28 @@ using System.Threading.Tasks;
 
 namespace P1
 {
-    public class Store
+    public enum Store
     {
-        public Store(int storeId, string location)
+        Walmart = 1,
+        Kroger = 2,
+        HEB = 3,
+    }
+
+    public static class StoreLocator
+    {
+        public static string GetStoreLocation(Store store)
         {
-            StoreId = storeId;
-            Location = location;
+            switch (store)
+            {
+                case Store.Walmart:
+                    return "Houston";
+                case Store.Kroger:
+                    return "Sugar Land";
+                case Store.HEB:
+                    return "Cypress";
+                default:
+                    throw new ArgumentException("Invalid store.");
+            }
         }
-        public int StoreId { get; set; }
-        public string Location { get; set; }
     }
 }

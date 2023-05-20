@@ -15,6 +15,7 @@ namespace P1
                 { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken") }
             };
 
+            // TODO FIX STORE FILE TO USE DICTIONARY
             // Create a dictionary to store stores with integer keys
             Dictionary<int, Store> storeDictionary = new Dictionary<int, Store>();
 
@@ -28,7 +29,7 @@ namespace P1
             storeDictionary.Add(Kroger.StoreId, Kroger);
             storeDictionary.Add(HEB.StoreId, HEB);
 
-            Console.WriteLine("Hello there, please enter your first and last name.");
+            Console.WriteLine($"Hello there, please enter your first and last name.");
             string names = Console.ReadLine();
 
             // Divide the string delimited by a space
