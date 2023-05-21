@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace P1
+namespace Prj1
 {
     class Program
     {
@@ -13,7 +13,6 @@ namespace P1
 
             while (isRunning)
             {
-<<<<<<< HEAD
                 Console.WriteLine("1. Log in");
                 Console.WriteLine("2. Quit");
 
@@ -21,64 +20,6 @@ namespace P1
                 string choice = Console.ReadLine();
 
                 switch (choice)
-=======
-                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", new Dictionary<Store, int>()) },
-                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", new Dictionary<Store, int>()) },
-                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", new Dictionary<Store, int>()) }
-                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", 10) },
-                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", 5) },
-                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", 15) }
-            };
-
-            // Create a dictionary to store stores with GUID ID
-            Dictionary<Guid, StoreData> storeDictionary = new Dictionary<Guid, StoreData>();
-
-            // Create store objects
-            StoreData store1 = new StoreData { StoreId = Guid.NewGuid(), Name = "Walmart" };
-            StoreData store2 = new StoreData { StoreId = Guid.NewGuid(), Name = "Kroger" };
-            StoreData store3 = new StoreData { StoreId = Guid.NewGuid(), Name = "HEB" };
-
-            // Add store objects to the dictionary
-            storeDictionary.Add(store1.StoreId, store1);
-            storeDictionary.Add(store2.StoreId, store2);
-            storeDictionary.Add(store3.StoreId, store3);
-
-            // Link quantities of Product 1 to Walmart, Kroger, and HEB
-            productDictionary[1].Quantities[Walmart] = 4;
-            productDictionary[1].Quantities[Kroger] = 4;
-            productDictionary[1].Quantities[HEB] = 2;
-
-            // Link quantities of Product 2
-            productDictionary[2].Quantities[Walmart] = 9;
-            productDictionary[2].Quantities[Kroger] = 9;
-            productDictionary[2].Quantities[HEB] = 9;
-
-            // Link quantities of Product 3
-            productDictionary[3].Quantities[Walmart] = 3;
-            productDictionary[3].Quantities[Kroger] = 3;
-            productDictionary[3].Quantities[HEB] = 3;
-
-
-            // Start the app
-            Console.WriteLine("Hello there, please enter your first and last name.");
-            string names = Console.ReadLine();
-
-            // Divide the string delimited by a space
-            string[] namesArr = names.Split(' ');
-
-            bool isValidStore = false;
-            Store selectedStore = null;
-            do
-            {
-                Console.WriteLine("Thank you. Please choose a store from the list:\n" +
-                                  "1. Walmart\n" +
-                                  "2. Kroger\n" +
-                                  "3. HEB");
-
-                string userChoice = Console.ReadLine();
-
-                if (int.TryParse(userChoice, out int storeId) && storeDictionary.ContainsKey(storeId))
->>>>>>> 833a58370d7e91f36a33f42201c7fdd2941ce319
                 {
                     case "1":
                         RunApp();

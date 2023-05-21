@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // The OrderPrimary property is a static counter variable for generating primary keys.
 // The OrderTime property is a DateTime object t hat represents the time the order was placed.
 // The OrderId property is a Guid object that represents the order ID.
-namespace P1
+namespace Prj1
 {
     public class Order
     {
@@ -16,11 +16,7 @@ namespace P1
         public int OrderPrimary { get; private set; }
         public DateTime OrderTime { get; set; }
         public Guid OrderId { get; set; }
-<<<<<<< HEAD
         public string Location { get; set; }
-=======
-        public Store Store { get; set; }
->>>>>>> 833a58370d7e91f36a33f42201c7fdd2941ce319
         public Product Product { get; set; } = null!;
         public Customer Customer { get; set; } = null!;
         public int Quantity { get; set; }
