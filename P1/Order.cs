@@ -16,24 +16,33 @@ namespace P1
         public int OrderPrimary { get; private set; }
         public DateTime OrderTime { get; set; }
         public Guid OrderId { get; set; }
-        // public Store Store { get; set; }
+        public string Location { get; set; }
         public Product Product { get; set; } = null!;
         public Customer Customer { get; set; } = null!;
         public int Quantity { get; set; }
+        public string StoreLocation { get; set; } // Added StoreLocation property
         public StoreData Store { get; set; } // Update the type to StoreData
-
 
         public Order()
         {
-            OrderPrimary = Order.GeneratePrimaryKey();
+            OrderPrimary = GeneratePrimaryKey();
             OrderTime = DateTime.Now;
             OrderId = Guid.NewGuid();
-
         }
 
         private static int GeneratePrimaryKey()
         {
             return ++OrderCounter;
+        }
+    }
+
+    public class OrderHistory
+    {
+        public List<Order> Orders { get; }
+
+        public OrderHistory()
+        {
+            Orders = new List<Order>();
         }
     }
 }

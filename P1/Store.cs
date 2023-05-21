@@ -20,6 +20,7 @@ namespace P1
         public string Name { get; set; }
         public StoreData Store { get; set; }
 
+
         public StoreData(Guid storeId, String name)
         {
             StoreId = storeId;

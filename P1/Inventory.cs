@@ -19,5 +19,4 @@ namespace P1
             Products = new Dictionary<Product, int>();
         }
     }
-
 }
