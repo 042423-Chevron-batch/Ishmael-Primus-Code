@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 // The Order class includes properties for OrderPrimary, OrderTime, OrderId, Store, Product, Customer, and Quantity.
 // The OrderPrimary property is a static counter variable for generating primary keys.
-// The OrderTime property is a DateTime object that represents the time the order was placed.
+// The OrderTime property is a DateTime object t hat represents the time the order was placed.
 // The OrderId property is a Guid object that represents the order ID.
 namespace P1
 {
