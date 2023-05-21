@@ -1,48 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace P1
 {
     class Program
     {
+        static Dictionary<Guid, StoreData> storeDictionary;
+
         static void Main(string[] args)
         {
             // Create a dictionary to store the products with their quantities
             Dictionary<int, Product> productDictionary = new Dictionary<int, Product>
             {
-                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", new Dictionary<Store, int>()) },
-                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", new Dictionary<Store, int>()) },
-                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", new Dictionary<Store, int>()) }
+                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", new Dictionary<StoreData, int>()) },
+                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", new Dictionary<StoreData, int>()) },
+                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", new Dictionary<StoreData, int>()) },
             };
 
-            // Create a dictionary to store stores with integer keys
-            Dictionary<int, Store> storeDictionary = new Dictionary<int, Store>();
+            // Create a dictionary to store stores with GUID ID
+            storeDictionary = new Dictionary<Guid, StoreData>();
 
             // Create store objects
-            Store Walmart = new Store(1, "Houston");
-            Store Kroger = new Store(2, "Sugar Land");
-            Store HEB = new Store(3, "Cypress");
+            StoreData store1 = new StoreData(Guid.NewGuid(), "Walmart");
+            StoreData store2 = new StoreData(Guid.NewGuid(), "Kroger");
+            StoreData store3 = new StoreData(Guid.NewGuid(), "HEB");
 
             // Add store objects to the dictionary
-            storeDictionary.Add(Walmart.StoreId, Walmart);
-            storeDictionary.Add(Kroger.StoreId, Kroger);
-            storeDictionary.Add(HEB.StoreId, HEB);
+            storeDictionary.Add(store1.StoreId, store1);
+            storeDictionary.Add(store2.StoreId, store2);
+            storeDictionary.Add(store3.StoreId, store3);
 
-            // Link quantities of Product 1 to Walmart, Kroger, and HEB
-            productDictionary[1].Quantities[Walmart] = 4;
-            productDictionary[1].Quantities[Kroger] = 4;
-            productDictionary[1].Quantities[HEB] = 2;
-
-            // Link quantities of Product 2
-            productDictionary[2].Quantities[Walmart] = 9;
-            productDictionary[2].Quantities[Kroger] = 9;
-            productDictionary[2].Quantities[HEB] = 9;
-
-            // Link quantities of Product 3
-            productDictionary[3].Quantities[Walmart] = 3;
-            productDictionary[3].Quantities[Kroger] = 3;
-            productDictionary[3].Quantities[HEB] = 3;
-
+            // Set initial quantities for each store
+            foreach (var product in productDictionary.Values)
+            {
+                product.Quantities[store1] = 10; // Set initial quantity for store1
+                product.Quantities[store2] = 15; // Set initial quantity for store2
+                product.Quantities[store3] = 20; // Set initial quantity for store3
+            }
 
             // Start the app
             Console.WriteLine("Hello there, please enter your first and last name.");
@@ -52,21 +47,43 @@ namespace P1
             string[] namesArr = names.Split(' ');
 
             bool isValidStore = false;
-            Store selectedStore = null;
+            StoreData selectedStore = null;
+
             do
             {
-                Console.WriteLine("Thank you. Please choose a store from the list:\n" +
-                                  "1. Walmart\n" +
-                                  "2. Kroger\n" +
-                                  "3. HEB");
+                Console.WriteLine("Thank you. Please choose a store from the list:");
+                Console.WriteLine("W. Walmart");
+                Console.WriteLine("K. Kroger");
+                Console.WriteLine("H. HEB");
 
-                string userChoice = Console.ReadLine();
+                string userChoice = Console.ReadLine()?.ToUpper();
 
-                if (int.TryParse(userChoice, out int storeId) && storeDictionary.ContainsKey(storeId))
+                if (userChoice == "W")
                 {
-                    selectedStore = storeDictionary[storeId];
-                    Console.WriteLine($"{namesArr[0]} {namesArr[1]}, {selectedStore.Location} was selected");
-                    isValidStore = true;
+                    if (storeDictionary.ContainsKey(store1.StoreId))
+                    {
+                        selectedStore = storeDictionary[store1.StoreId];
+                        Console.WriteLine($"{namesArr[0]} {namesArr[1]}, {selectedStore.Name} was selected");
+                        isValidStore = true;
+                    }
+                }
+                else if (userChoice == "K")
+                {
+                    if (storeDictionary.ContainsKey(store2.StoreId))
+                    {
+                        selectedStore = storeDictionary[store2.StoreId];
+                        Console.WriteLine($"{namesArr[0]} {namesArr[1]}, {selectedStore.Name} was selected");
+                        isValidStore = true;
+                    }
+                }
+                else if (userChoice == "H")
+                {
+                    if (storeDictionary.ContainsKey(store3.StoreId))
+                    {
+                        selectedStore = storeDictionary[store3.StoreId];
+                        Console.WriteLine($"{namesArr[0]} {namesArr[1]}, {selectedStore.Name} was selected");
+                        isValidStore = true;
+                    }
                 }
                 else
                 {
@@ -76,12 +93,14 @@ namespace P1
 
             List<Order> cart = new List<Order>();
             bool isAddingProducts = true;
+            decimal totalAmount = 0m;
+
             while (isAddingProducts)
             {
-                Console.WriteLine("\nPlease choose a product from the list or enter '0' to checkout:\n" +
-                                  "1. Milk\n" +
-                                  "2. Bread\n" +
-                                  "3. Chicken");
+                Console.WriteLine("\nPlease choose a product from the list or enter '0' to checkout:");
+                Console.WriteLine("1. Milk");
+                Console.WriteLine("2. Bread");
+                Console.WriteLine("3. Chicken");
 
                 string userChoice = Console.ReadLine();
 
@@ -98,16 +117,16 @@ namespace P1
                             selectedProduct.Quantities[selectedStore] -= quantity; // Deduct the selected quantity from the available quantity
                             cart.Add(new Order
                             {
-                                OrderId = Guid.NewGuid(), // Generate a new Guid for the OrderId
+                                OrderId = Guid.NewGuid(),
                                 Store = selectedStore,
                                 Product = selectedProduct,
                                 Customer = new Customer(namesArr[0], namesArr[1]),
                                 Quantity = quantity,
                                 OrderTime = DateTime.Now
-
                             });
 
                             Console.WriteLine($"{quantity} {selectedProduct.Name} added to the cart.");
+                            totalAmount += selectedProduct.Price * quantity; // Update the total amount
                         }
                         else
                         {
@@ -124,14 +143,11 @@ namespace P1
                     isAddingProducts = false;
                     Console.WriteLine("\nCheckout:");
                     Console.WriteLine($"Customer: {namesArr[0]} {namesArr[1]}");
-                    Console.WriteLine($"Store: {selectedStore.Location}");
+                    Console.WriteLine($"Store: {selectedStore.Name}");
 
-                    decimal totalAmount = 0m;
                     foreach (var order in cart)
                     {
-                        decimal orderAmount = order.Quantity * order.Product.Price;
-                        Console.WriteLine($"{order.Product.Name} x {order.Quantity} = ${orderAmount}");
-                        totalAmount += orderAmount;
+                        Console.WriteLine($"{order.Product.Name} x {order.Quantity} = ${order.Product.Price * order.Quantity}");
                     }
 
                     Console.WriteLine($"Total: ${totalAmount}");

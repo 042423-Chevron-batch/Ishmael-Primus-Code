@@ -11,9 +11,9 @@ namespace P1
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
-        public Dictionary<Store, int> Quantities { get; set; }
+        public Dictionary<StoreData, int> Quantities { get; set; }
 
-        public Product(int ProductId, string Name, decimal Price, string Description, Dictionary<Store, int> quantities)
+        public Product(int ProductId, string Name, decimal Price, string Description, Dictionary<StoreData, int> quantities)
         {
             this.ProductId = ProductId;
             this.Name = Name;
