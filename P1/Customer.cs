@@ -11,15 +11,15 @@ namespace P1
 
         public Customer(string fname, string lname)
         {
-            this.Fname = fname;
-            this.Lname = lname;
+            Fname = fname;
+            Lname = lname;
         }
 
         //field
         public readonly int age = 0;
         public Guid CustomerId { get; set; } = Guid.NewGuid(); // when you create a property with a setter, C# creates a private backing variable of the same name for you. YOu don't see it.
 
-        private string fname;
+        private string fname = string.Empty;
         public string Fname
         {
             get { return fname; }
@@ -36,7 +36,7 @@ namespace P1
             }
         }
 
-        public string Lname { get; set; } // this is a "property"
+        public string Lname { get; set; } = string.Empty;// this is a "property"
 
         //TODO add a speak method to inherit
     }

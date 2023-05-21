@@ -3,26 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace P1
 {
+    /// <summary>
+    /// This class is used to store the store name
     public enum Store
     {
         Walmart = 1,
         Kroger = 2,
         HEB = 3,
     }
-
-    public static class StoreLocator
+    public class StoreData
     {
-        public static string GetStoreLocation(Store store)
+        public Guid StoreId { get; set; } = Guid.NewGuid();
+        public string Name { get; set; } = string.Empty;
+    }
+    /// <summary>
+    /// This class is used to store the store location
+    /// </summary>
+    public static class StoreLocation
+    {
+        public static string GetStoreLocation(StoreData store)
+
         {
-            switch (store)
+            switch (store.Name)
             {
-                case Store.Walmart:
+                case "Walmart":
                     return "Houston";
-                case Store.Kroger:
+                case "Kroger":
                     return "Sugar Land";
-                case Store.HEB:
+                case "HEB":
                     return "Cypress";
                 default:
                     throw new ArgumentException("Invalid store.");

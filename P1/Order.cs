@@ -16,7 +16,7 @@ namespace P1
         public int OrderPrimary { get; private set; }
         public DateTime OrderTime { get; set; }
         public Guid OrderId { get; set; }
-        public Store Store { get; set; } = null!;
+        public Store Store { get; set; }
         public Product Product { get; set; } = null!;
         public Customer Customer { get; set; } = null!;
         public int Quantity { get; set; }

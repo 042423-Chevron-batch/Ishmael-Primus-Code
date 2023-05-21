@@ -13,13 +13,15 @@ namespace P1
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
+        public int Quantity { get; set; }
 
-        public Product(int ProductId, string Name, decimal Price, string Description)
+        public Product(int ProductId, string Name, decimal Price, string Description, int Quantity)
         {
             this.ProductId = ProductId;
             this.Name = Name;
             this.Price = Price;
             this.Description = Description;
+            this.Quantity = Quantity;
         }
     }
 }

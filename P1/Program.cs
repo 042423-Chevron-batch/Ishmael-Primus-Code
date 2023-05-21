@@ -10,24 +10,23 @@ namespace P1
             // Create a dictionary to store the products with their quantities
             Dictionary<int, Product> productDictionary = new Dictionary<int, Product>
             {
-                { 1, new Product(1, "Milk", 5.99m, "Organic Milk") },
-                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread") },
-                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken") }
+                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", 10) },
+                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", 5) },
+                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", 15) }
             };
 
-            // TODO FIX STORE FILE TO USE DICTIONARY
-            // Create a dictionary to store stores with integer keys
-            Dictionary<int, Store> storeDictionary = new Dictionary<int, Store>();
+            // Create a dictionary to store stores with GUID ID
+            Dictionary<Guid, StoreData> storeDictionary = new Dictionary<Guid, StoreData>();
 
             // Create store objects
-            Store Walmart = new Store(1, "Houston");
-            Store Kroger = new Store(2, "Sugar Land");
-            Store HEB = new Store(3, "Cypress");
+            StoreData store1 = new StoreData { StoreId = Guid.NewGuid(), Name = "Walmart" };
+            StoreData store2 = new StoreData { StoreId = Guid.NewGuid(), Name = "Kroger" };
+            StoreData store3 = new StoreData { StoreId = Guid.NewGuid(), Name = "HEB" };
 
             // Add store objects to the dictionary
-            storeDictionary.Add(Walmart.StoreId, Walmart);
-            storeDictionary.Add(Kroger.StoreId, Kroger);
-            storeDictionary.Add(HEB.StoreId, HEB);
+            storeDictionary.Add(store1.StoreId, store1);
+            storeDictionary.Add(store2.StoreId, store2);
+            storeDictionary.Add(store3.StoreId, store3);
 
             Console.WriteLine($"Hello there, please enter your first and last name.");
             string names = Console.ReadLine();
@@ -47,17 +46,17 @@ namespace P1
                 string userChoice = Console.ReadLine()?.ToUpper();
 
                 // Perform individual actions if a store is selected
-                if (userChoice == "W" && storeDictionary.ContainsKey(Walmart.StoreId))
+                if (userChoice == "W" && storeDictionary.ContainsKey(store1.StoreId))
                 {
                     Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Walmart was selected");
                     isValidStore = true;
                 }
-                else if (userChoice == "K" && storeDictionary.ContainsKey(Kroger.StoreId))
+                else if (userChoice == "K" && storeDictionary.ContainsKey(store2.StoreId))
                 {
                     Console.WriteLine($"{namesArr[0]} {namesArr[1]}, Kroger was selected");
                     isValidStore = true;
                 }
-                else if (userChoice == "H" && storeDictionary.ContainsKey(HEB.StoreId))
+                else if (userChoice == "H" && storeDictionary.ContainsKey(store3.StoreId))
                 {
                     Console.WriteLine($"{namesArr[0]} {namesArr[1]}, HEB was selected");
                     isValidStore = true;
