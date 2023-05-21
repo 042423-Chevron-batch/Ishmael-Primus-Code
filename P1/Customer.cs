@@ -3,48 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
-//  Defines a Customer class with properties for the first name (Fname) and last name (Lname). 
-// The first name property has a custom validation that throws a FormatException if the name length is less than 4 characters.
 namespace P1
 {
-
     public class Customer
     {
         public Customer() { }
 
         public Customer(string fname, string lname)
         {
-            this.Fname = fname;
-            this.Lname = lname;
+            Fname = fname;
+            Lname = lname;
         }
 
-        private string fname;
+        //field
+        public readonly int age = 0;
+        public Guid CustomerId { get; set; } = Guid.NewGuid(); // when you create a property with a setter, C# creates a private backing variable of the same name for you. YOu don't see it.
+
+        private string fname = string.Empty;
         public string Fname
         {
             get { return fname; }
             set
             {
-                try
+                if (value.Length < 2)
                 {
-                    if (value == null || value.Length < 4)
-                    {
-                        throw new FormatException("Invalid name format. The first name must be at least 4 characters long.");
-                    }
-                    else
-                    {
-                        fname = value;
-                    }
+                    throw new FormatException(); // TODO find out why this exception didn't crash the program
                 }
-                catch (FormatException)
+                else
                 {
-                    Console.WriteLine("Invalid name format. Please try again.");
-                    // You may choose to rethrow the exception if necessary
-                    // throw;
+                    this.fname = value;
                 }
             }
         }
-        public string Lname { get; set; }
+
+        public string Lname { get; set; } = string.Empty;// this is a "property"
+
+        //TODO add a speak method to inherit
     }
 }
-

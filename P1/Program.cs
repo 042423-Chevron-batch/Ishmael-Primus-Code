@@ -13,20 +13,23 @@ namespace P1
                 { 1, new Product(1, "Milk", 5.99m, "Organic Milk", new Dictionary<Store, int>()) },
                 { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", new Dictionary<Store, int>()) },
                 { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", new Dictionary<Store, int>()) }
+                { 1, new Product(1, "Milk", 5.99m, "Organic Milk", 10) },
+                { 2, new Product(2, "Bread", 10.99m, "Wheat Bread", 5) },
+                { 3, new Product(3, "Chicken", 20.99m, "BBQ Chicken", 15) }
             };
 
-            // Create a dictionary to store stores with integer keys
-            Dictionary<int, Store> storeDictionary = new Dictionary<int, Store>();
+            // Create a dictionary to store stores with GUID ID
+            Dictionary<Guid, StoreData> storeDictionary = new Dictionary<Guid, StoreData>();
 
             // Create store objects
-            Store Walmart = new Store(1, "Houston");
-            Store Kroger = new Store(2, "Sugar Land");
-            Store HEB = new Store(3, "Cypress");
+            StoreData store1 = new StoreData { StoreId = Guid.NewGuid(), Name = "Walmart" };
+            StoreData store2 = new StoreData { StoreId = Guid.NewGuid(), Name = "Kroger" };
+            StoreData store3 = new StoreData { StoreId = Guid.NewGuid(), Name = "HEB" };
 
             // Add store objects to the dictionary
-            storeDictionary.Add(Walmart.StoreId, Walmart);
-            storeDictionary.Add(Kroger.StoreId, Kroger);
-            storeDictionary.Add(HEB.StoreId, HEB);
+            storeDictionary.Add(store1.StoreId, store1);
+            storeDictionary.Add(store2.StoreId, store2);
+            storeDictionary.Add(store3.StoreId, store3);
 
             // Link quantities of Product 1 to Walmart, Kroger, and HEB
             productDictionary[1].Quantities[Walmart] = 4;
