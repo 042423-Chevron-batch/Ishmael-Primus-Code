@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 // The Inventory class includes a property Products of type Dictionary<Product, int>, 
 // where Product represents the product and int represents the quantity.
-namespace P1
+namespace Prj1
 {
     public class Inventory
     {
