@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // this is a business layer class
 [assembly: InternalsVisibleTo("Tests.P1")]
 
-namespace P1
+namespace Prj1
 {
     internal class P1_AppPlay
     {
