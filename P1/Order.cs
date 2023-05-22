@@ -16,11 +16,7 @@ namespace P1
         public int OrderPrimary { get; private set; }
         public DateTime OrderTime { get; set; }
         public Guid OrderId { get; set; }
-<<<<<<< HEAD
         public string Location { get; set; }
-=======
-        public Store Store { get; set; }
->>>>>>> 833a58370d7e91f36a33f42201c7fdd2941ce319
         public Product Product { get; set; } = null!;
         public Customer Customer { get; set; } = null!;
         public int Quantity { get; set; }

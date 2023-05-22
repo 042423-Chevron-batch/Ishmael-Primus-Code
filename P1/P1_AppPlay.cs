@@ -33,11 +33,7 @@ namespace P1
         /// <param name="customer"></param>
         /// <param name="quantity"></param>
         /// <returns></returns>/
-<<<<<<< HEAD
         public Order CreateOrder(StoreData store, Product product, Customer customer, int quantity)
-=======
-        public Order CreateOrder(Store store, Product product, Customer customer, int quantity)
->>>>>>> 833a58370d7e91f36a33f42201c7fdd2941ce319
         {
             Order newOrder = new Order
             {

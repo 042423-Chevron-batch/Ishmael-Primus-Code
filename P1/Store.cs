@@ -17,7 +17,6 @@ namespace P1
     public class StoreData
     {
         public Guid StoreId { get; set; } = Guid.NewGuid();
-<<<<<<< HEAD
         public string Name { get; set; }
         public StoreData Store { get; set; }
 
@@ -26,29 +25,6 @@ namespace P1
         {
             StoreId = storeId;
             Name = name;
-=======
-        public string Name { get; set; } = string.Empty;
-    }
-    /// <summary>
-    /// This class is used to store the store location
-    /// </summary>
-    public static class StoreLocation
-    {
-        public static string GetStoreLocation(StoreData store)
-
-        {
-            switch (store.Name)
-            {
-                case "Walmart":
-                    return "Houston";
-                case "Kroger":
-                    return "Sugar Land";
-                case "HEB":
-                    return "Cypress";
-                default:
-                    throw new ArgumentException("Invalid store.");
-            }
->>>>>>> 833a58370d7e91f36a33f42201c7fdd2941ce319
         }
     }
     /// <summary>
