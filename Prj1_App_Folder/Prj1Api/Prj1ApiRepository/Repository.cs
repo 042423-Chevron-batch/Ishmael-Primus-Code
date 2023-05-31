@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Prj1ApiModels;
 
 namespace Prj1ApiRepository
 {
@@ -42,7 +40,7 @@ namespace Prj1ApiRepository
         }
 
         // SELECT CustomerId, FirstName, LastName, Email FROM [dbo].[Customer] WHERE FirstName = 'James Alan' AND LastName = 'Moore'; 
-        public static Person Login(string fname, string lname)
+        public static Customer Login(string fname, string lname)
         {
             SqlCommand comm = new SqlCommand("SELECT CustomerId, FirstName, LastName, Email FROM [dbo].[Customer] WHERE FirstName = @fname AND LastName = @lname;", con);
             comm.Parameters.AddWithValue("@fname", fname);
@@ -50,30 +48,30 @@ namespace Prj1ApiRepository
             con.Open();
             SqlDataReader ret = comm.ExecuteReader();
 
-            Person p = new Person();
+            Customer c = new Customer();
             //List<Person> myList = new List<Person>();
             // this while loop will iterate over all the rows in the return. You will need to store all the rows in a List<Person>
             while (ret.Read())
             {
-                p = new Person(ret.GetInt32(0), ret.GetString(1), ret.GetString(2), ret.GetString(3));
+                c = new Customer(ret.GetString(1), ret.GetString(2));
                 //myList.Add(new Person(ret.GetInt32(0), ret.GetString(1), ret.GetString(2), ret.GetString(3)));
             }
-            return p;
+            return c;
         }
 
 
         //get all the customers (example)
-        public static List<Person> GetCustomers(string fname, string lname)
+        public static List<Customer> GetCustomers(string fname, string lname)
         {
             SqlCommand comm = new SqlCommand("SELECT CustomerId, FirstName, LastName, Email FROM [dbo].[Customer];", con);
             con.Open();
             SqlDataReader ret = comm.ExecuteReader();
 
-            List<Person> myList = new List<Person>();
+            List<Customer> myList = new List<Customer>();
             // this while loop will iterate over all the rows in the return. You will need to store all the rows in a List<Person>
             while (ret.Read())
             {
-                myList.Add(new Person(ret.GetInt32(0), ret.GetString(1), ret.GetString(2), ret.GetString(3)));
+                myList.Add(new Customer(ret.GetString(1), ret.GetString(2)));
             }
             return myList;
         }

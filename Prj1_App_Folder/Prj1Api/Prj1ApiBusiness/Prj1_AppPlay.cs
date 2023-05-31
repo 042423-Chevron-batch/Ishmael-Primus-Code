@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Prj1ApiModels;
+using Prj1ApiRepository;
+
 
 namespace Prj1ApiBusiness
 {
-    internal class Prj1_AppPlay
+    public class Prj1_AppPlay
     {
-        private static List<App> AllApps { get; set; } = new List<App>();
-
         /// <summary>
         /// This method takes an int and a double and returns a string concatenation of them
         /// </summary>
@@ -51,15 +52,16 @@ namespace Prj1ApiBusiness
         {
             string[] xx = x.Split(' ');
 
-            if (Int32.TryParse(xx[2], out int xx1))
+            if (xx.Length >= 3 && Int32.TryParse(xx[2], out int xx1))
             {
                 return new Customer(xx[0], xx[1]);
             }
             else
             {
-                return new Customer(xx[0], xx[1]);
+                return new Customer(xx[0], "Primus");
             }
         }
+
 
         /// <summary>
         /// 
@@ -89,3 +91,5 @@ namespace Prj1ApiBusiness
         }
     }
 }
+
+
