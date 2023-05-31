@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rpP0Ne2Ha1tjoB2gfziXKOVWeff/zeqqVr+zgA6VxjRG3ZT7tVVBY/6X//62azVTJfewonTcbe79sWNgl9uDlg==",
+  "dgSpecHash": "K4jZ9QiNXPgCH+j+2qXHt4ktuKBrAIgCiExLOHhoARYwZFAdDUr1wXPQdWZdIZuPf2IIvJyEXqlbtaknakqweQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App\\Tests.Prj1_App\\Tests.Prj1_App.csproj",
+  "projectFilePath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Tests.Prj1_App\\Tests.Prj1_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ishma\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\ishma\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
