@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Prj1
 {
-    internal class Prj1_AppPlay
+    public class Prj1_AppPlay
     {
         private static List<App> AllApps { get; set; } = new List<App>();
 
