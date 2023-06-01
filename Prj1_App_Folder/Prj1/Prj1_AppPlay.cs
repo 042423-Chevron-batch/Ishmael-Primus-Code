@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Prj1
 {
-    internal class Prj1_AppPlay
+    public class Prj1_AppPlay
     {
         private static List<App> AllApps { get; set; } = new List<App>();
 
@@ -55,15 +55,16 @@ namespace Prj1
         {
             string[] xx = x.Split(' ');
 
-            if (Int32.TryParse(xx[2], out int xx1))
+            if (xx.Length >= 3 && Int32.TryParse(xx[2], out int xx1))
             {
                 return new Customer(xx[0], xx[1]);
             }
             else
             {
-                return new Customer(xx[0], xx[1]);
+                return new Customer(xx[0], "Primus");
             }
         }
+
 
         /// <summary>
         /// 
