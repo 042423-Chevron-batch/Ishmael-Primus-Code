@@ -30,64 +30,17 @@ namespace Prj1ApiBusiness
         /// <param name="customer"></param>
         /// <param name="quantity"></param>
         /// <returns></returns>/
-        // public Order CreateOrder(StoreData store, Product product, Customer customer, int quantity)
-        // {
-        //     Order newOrder = new Order
-        //     {
-        //         Store = store,
-        //         Product = product,
-        //         Customer = customer,
-        //         Quantity = quantity
-        //     };
-
-        //     return newOrder;
-        // }
-
-        // Place an order to a store location for a customer
-        //
-        public static Order PlaceOrder(Store store, Product product, Customer customer, int quantity)
+        public Order CreateOrder(StoreData store, Product product, Customer customer, int quantity)
         {
-            Order ret = Repository.PlaceOrder(store, product, customer, quantity);
-            return ret;
-        }
+            Order newOrder = new Order
+            {
+                Store = store,
+                Product = product,
+                Customer = customer,
+                Quantity = quantity
+            };
 
-        // Login for the user for repository 
-        //
-        public static Customer Login ( string fname, string lname)
-        {
-            Customer ret = Repository.Login(fname, lname);
-            return ret;
-        }
-
-        // Add a new customer to the repository
-        //
-        public static Customer AddCustomer(string fname, string lname)
-        {
-            Customer ret = Repository.AddCustomer(fname, lname);
-            return ret;
-        }
-
-        // Display customer order history
-        //
-        public static List<Order> DisplayOrderHistory(Customer customer)
-        {
-            List<Order> ret = Repository.DisplayOrderHistory(customer);
-            return ret;
-        }
-
-        // Display order history of a specific store
-        //
-        public static List<Order> DisplayOrderHistory(Store store)
-        {
-            List<Order> ret = Repository.DisplayOrderHistory(store);
-            return ret;
-        }
-        
-        // Update the product quantity in the store
-        //
-        static void UpdateProductQuantity(StoreData store, Product product, int quantity)
-        {
-            product.Quantities[store] -= Repository.UpdateProductQuantity( product, store, quantity );
+            return newOrder;
         }
 
         /// <summary>
@@ -141,6 +94,5 @@ namespace Prj1ApiBusiness
     }// EoC
 }// EoN
 
-// 6/1 Added CustomerLogin method, AddCustomer method, DisplayOrderHistory method, EvaluateOrder method, and PlaceOrder method
 
 

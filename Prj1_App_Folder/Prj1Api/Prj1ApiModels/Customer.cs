@@ -11,8 +11,8 @@ namespace Prj1ApiModels
 
         public Customer(string fname, string lname) 
         {
-            Fname = fname;
-            Lname = lname;
+            this.Fname = fname;
+            this.Lname = lname;
         }
 
         //field

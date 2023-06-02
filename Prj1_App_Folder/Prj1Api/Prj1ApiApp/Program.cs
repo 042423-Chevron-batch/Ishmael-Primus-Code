@@ -28,6 +28,7 @@ using System;
 using System.Collections.Generic;
 using Prj1ApiModels;
 using Prj1ApiBusiness;
+using Prj1ApiRepository;
 
 namespace Prj1
 
@@ -108,19 +109,56 @@ namespace Prj1
             while (!isLoggedOut)
             {
                 Console.WriteLine("Hello there, please enter your first and last name. Enter 'quit' to return to the main menu.");
-                string names = Console.ReadLine(); //names is a string for user response
-                // register the user name
-                Customer customer = Prj1_AppPlay.RegisterCustomer(names);
+                string names = Console.ReadLine(); // names is a string for user response
 
-
+                // Check if the user wants to quit
                 if (names.ToLower() == "quit")
                 {
                     isLoggedOut = true;
                     continue;
                 }
 
-                // Divide the string delimited by a space
+                // Split the names into first name and last name
                 string[] namesArr = names.Split(' ');
+
+                // Check if both first name and last name are provided
+                if (namesArr.Length >= 2)
+                {
+                    try
+                    {
+                        string fname = namesArr[0];
+                        string lname = namesArr[1];
+
+                        // Call the Test method in the Repository class
+                        int result = Repository.Test(fname, lname);
+
+                        // Check the result and proceed accordingly
+                        if (result > 0)
+                        {   
+                            Console.WriteLine("Customer registration successful.");
+                            // Register the user name
+                            Customer customer = new Customer(fname, lname);
+                            // Further processing or display the customer information
+                        }
+                        else
+                        {
+                            Console.WriteLine("Failed to register the customer.");
+                            // Handle the registration failure scenario
+                        }
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        Console.WriteLine("Invalid input. Please try again.");
+                    }
+                 }
+                else
+                {
+                        Console.WriteLine("Invalid input. Please enter both your first and last name.");
+            }
+
+
+                // Divide the string delimited by a space
+                //string[] namesArr = names.Split(' ');
 
                 bool isValidStore = false;
                 StoreData selectedStore = null;
@@ -244,4 +282,4 @@ namespace Prj1
     }
 }
 
-// June 1 -  I registered the user name 
+// TODO 6/2: Add CustomerID & Email to Db to manipulate, also modify the repo class to include these fields
