@@ -161,7 +161,7 @@ namespace Prj1
                                     Store = selectedStore,
                                     StoreLocation = StoreLocation.GetStoreLocation(selectedStore), // Get the store location from the StoreLocation class
                                     Product = selectedProduct,
-                                    Customer = new Customer(namesArr[0], namesArr[1]),
+                                    Customer = new Customer(namesArr[0], namesArr[1]), 
                                     Quantity = quantity,
                                     OrderTime = orderTime // Use the same Order Time for each order in the cart
                                 });
