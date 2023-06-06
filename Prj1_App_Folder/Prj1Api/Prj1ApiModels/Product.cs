@@ -7,13 +7,13 @@ namespace Prj1ApiModels
 {
     public class Product
     {
-        public int ProductId { get; set; }
+        public Guid ProductId { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
         public Dictionary<StoreData, int> Quantities { get; set; }
 
-        public Product(int ProductId, string Name, decimal Price, string Description, Dictionary<StoreData, int> quantities)
+        public Product(Guid ProductId, string Name, decimal Price, string Description, Dictionary<StoreData, int> quantities)
         {
             this.ProductId = ProductId;
             this.Name = Name;

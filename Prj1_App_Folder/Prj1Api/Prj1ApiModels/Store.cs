@@ -18,6 +18,7 @@ namespace Prj1ApiModels
             StoreId = storeId;
             Name = name;
         }
+    
     }
     /// <summary>
     /// This class is used to store the store location
