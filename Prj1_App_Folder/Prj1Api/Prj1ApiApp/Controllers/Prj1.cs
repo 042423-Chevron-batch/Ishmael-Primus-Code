@@ -1,41 +1,106 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Prj1ApiBusiness;
+using Prj1ApiModels;
 
-namespace Prj1ApiApp.Controllers;
+namespace Prj1Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class Prj1Controller : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+    private readonly ILogger<Prj1Controller> _logger;
 
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public Prj1Controller(ILogger<Prj1Controller> logger)
     {
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    // we will add another method
+    [HttpPost("Register")]// define what verb this action method requires
+    public ActionResult<Customer> GetMyInt([FromBody] RegisterDto x)// get a json string object from the body and match it to the defined class.
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+
+        if (ModelState.IsValid)
         {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+            Prj1_AppPlay prj1 = new Prj1_AppPlay();
+            // i'll call a method on the business layer that will do the appropriate thing with the Customer object.
+            // I will return the  unputted customer back to the user along with the URI to GET the person entity so it can be used, if the FE wants to use it.
+            Customer ret = prj1.Register(x);
+            if (ret != null) return Created("url/path/to/this/resource", ret);
+
+            // string ret = String.Concat(x.Fname, " ", x.Lname, "is", x.age, "years old. His email is ", x.Email, ".");
+            // string ret1 = $"{x.Fname} {x.Lname} is {x.age} years old. His email is {x.Email}.";
+
+            // // return the URI for this resource, and a copy of the resource.
+            // return Created("http://www.mysite.com/path/to/this/resource/on/the/web", ret1);
+        }
+            // if something failed, return a message detailing the failure.
+            return BadRequest(new { message = "There was a problem with the new registration" });
     }
-    
-    [HttpGet("login/username/password")]
-    public ActionResult<Person> Login(string username, string password)
+
+
+    [HttpGet("stores")]
+    public ActionResult<List<Store>> Stores()
     {
-        return "Login successful";
+        // create an instance of the business layer
+        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        // call the business layer method to get the stores.
+        List<Store> stores = prj1.GetStores();
+        // return the stores
+        if (stores != null) return Ok(stores);
+        else return StatusCode(422, new { message = "There was a problem getting the stores." });
+    }
+
+
+
+    /// <summary>
+    /// This method  gets Customer username and password
+    /// </summary>
+    /// <param name="username"></param>
+    /// <param name="password"></param>
+    /// <returns></returns>
+    [HttpGet("login/username/password")]
+    public ActionResult<Customer> Login(string username, string password = "no password sent. :(")
+    {
+        //create an instance of the business layer
+        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        // send the loginDto to the business layer to do whatever it does.
+        Customer c = prj1.Login(username, password);
+        if (c == null)
+        {
+            return BadRequest(new { message = "There is not yet a user with that login/password combo." });
+        }
+        else return Ok(c);
+    }
+
+    /// <summary>
+    /// this endpoint takes a storeId and returns that store's inventory
+    /// </summary>
+    /// <param name="storeId"></param>
+    /// <returns></returns>
+    [HttpGet("stores/storeId")]
+    public ActionResult<Store> StoreInfo(Guid storeId)
+    {
+        // create an instance of the business layer
+        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        // call the business layer method to get the stores.
+        if (ModelState.IsValid)
+        {
+            Store s = prj1.StoreInfo(storeId);
+            if (s != null)
+            {
+                return Ok(s);}
+        }
+         return StatusCode(422, new { message = "There was a problem getting the inventory." });
     }
 }
+
 // using System;
 // using System.Collections.Generic;
 // using Prj1ApiModels;
