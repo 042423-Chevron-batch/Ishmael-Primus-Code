@@ -29,6 +29,12 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+    
+    [HttpGet("login/username/password")]
+    public ActionResult<Person> Login(string username, string password)
+    {
+        return "Login successful";
+    }
 }
 // using System;
 // using System.Collections.Generic;
