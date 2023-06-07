@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1ApiModels\\Prj1ApiModels.csproj",
-      "projectName": "Prj1ApiModels",
-      "projectPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1ApiModels\\Prj1ApiModels.csproj",
+      "projectUniqueName": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1_Models\\Prj1_Models.csproj",
+      "projectName": "Prj1_Models",
+      "projectPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1_Models\\Prj1_Models.csproj",
       "packagesPath": "C:\\Users\\ishma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1ApiModels\\obj\\",
+      "outputPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1_Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

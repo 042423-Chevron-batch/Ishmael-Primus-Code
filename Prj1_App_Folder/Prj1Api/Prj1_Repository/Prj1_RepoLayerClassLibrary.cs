@@ -51,7 +51,7 @@ namespace Prj1_Repository
         public Person GetUserByUnamePword(string userName, string password)
         {
             // check to see if thise username/password combo is in the Db.
-            SqlCommand comm = new SqlCommand("SELECT TOP 1 * FROM Customers WHERE UserName = @username AND Password = @password;", flubby);
+            SqlCommand comm = new SqlCommand("SELECT TOP 1 * FROM Customer WHERE UserName = @username AND Password = @password;", flubby);
             comm.Parameters.AddWithValue("@username", userName);
             comm.Parameters.AddWithValue("@password", password);
             flubby.Open();
@@ -86,7 +86,7 @@ namespace Prj1_Repository
         public int RegisterNewCustomer(Person p)
         {
             // create the query
-            SqlCommand comm = new SqlCommand("INSERT INTO Customers values(@cid, @fn, @ln, @lod, @r, @un, @pw);", flubby);
+            SqlCommand comm = new SqlCommand("INSERT INTO Customer values(@cid, @fn, @ln, @lod, @r, @un, @pw);", flubby);
             comm.Parameters.AddWithValue("@fn", p.FirstName);
             comm.Parameters.AddWithValue("@ln", p.LastName);
             comm.Parameters.AddWithValue("@cid", p.CustomerId);
@@ -189,7 +189,7 @@ namespace Prj1_Repository
         public bool UserNamePasswordInDb(string username, string password)
         {
             // check to see if thise username/password combo is in the Db.
-            SqlCommand comm = new SqlCommand("SELECT * FROM Customers WHERE UserName = @username AND Password = @password;", flubby);
+            SqlCommand comm = new SqlCommand("SELECT * FROM Customer WHERE UserName = @username AND Password = @password;", flubby);
             comm.Parameters.AddWithValue("@username", username);
             comm.Parameters.AddWithValue("@password", password);
             flubby.Open();

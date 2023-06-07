@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Prj1ApiModels\Prj1ApiModels.csproj" />
+    <ProjectReference Include="..\Prj1_Models\Prj1_Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

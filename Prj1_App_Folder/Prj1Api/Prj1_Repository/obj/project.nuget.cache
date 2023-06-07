@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UuYgmKaRfKKo1N+L9C+nz0xs8NAc4YPSK6PU7TDdfMXZZkaDnnOC7xC5p7AhsInpVovUUiTmTbpDtafZFjD++w==",
+  "dgSpecHash": "6hGXDzU2LsPyB+33uYt4PtNF/Tnb74mAik+3lIf5/gzWt0+eiCbb01tgEVqQ8Lyz9cxRBYSv6gNTrJh138eaIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1ApiRepository\\Prj1ApiRepository.csproj",
+  "projectFilePath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1Api\\Prj1_Repository\\Prj1_Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ishma\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ishma\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

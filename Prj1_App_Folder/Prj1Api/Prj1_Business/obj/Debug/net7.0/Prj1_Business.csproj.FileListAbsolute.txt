@@ -1,0 +1,17 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Business.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Business.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Business.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Repository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Models.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Debug\net7.0\Prj1_Repository.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.csproj.CopyComplete
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\refint\Prj1_Business.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\Prj1_Business.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Business\obj\Debug\net7.0\ref\Prj1_Business.dll

@@ -23,9 +23,9 @@ namespace Prj1_Models
         /// </summary>
         /// <param name="res"></param>
         /// <returns></returns>
-        public static Product AdoToProduct(Guid id, string name, int price, string desc, Dictionary<StoreData, int> quantities)
+        public static Product AdoToProduct(Guid id, string name, int quantity, string desc)
         {
-            Product p = new Product(id, name, price, desc, quantities);
+            Product p = new Product(id, name, quantity, desc);
             return p;
         }
 
