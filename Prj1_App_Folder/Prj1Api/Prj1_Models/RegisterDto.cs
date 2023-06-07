@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Rps_Models
+namespace Prj1_Models
 {
     public class RegisterDto
     {

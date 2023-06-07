@@ -5,8 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Prj1ApiBusiness;
-using Prj1ApiModels;
+using Prj1_Business;
+using Prj1_Models;
 
 namespace Prj1Api.Controllers;
 
@@ -23,7 +23,7 @@ public class Prj1Controller : ControllerBase
 
     // we will add another method
     [HttpPost("Register")]// define what verb this action method requires
-    public ActionResult<Customer> GetMyInt([FromBody] RegisterDto x)// get a json string object from the body and match it to the defined class.
+    public ActionResult<Person> GetMyInt([FromBody] RegisterDto x)// get a json string object from the body and match it to the defined class.
     {
 
         if (ModelState.IsValid)
@@ -31,7 +31,7 @@ public class Prj1Controller : ControllerBase
             Prj1_AppPlay prj1 = new Prj1_AppPlay();
             // i'll call a method on the business layer that will do the appropriate thing with the Customer object.
             // I will return the  unputted customer back to the user along with the URI to GET the person entity so it can be used, if the FE wants to use it.
-            Customer ret = prj1.Register(x);
+            Person ret = prj1.Register(x);
             if (ret != null) return Created("url/path/to/this/resource", ret);
 
             // string ret = String.Concat(x.Fname, " ", x.Lname, "is", x.age, "years old. His email is ", x.Email, ".");
@@ -66,13 +66,13 @@ public class Prj1Controller : ControllerBase
     /// <param name="password"></param>
     /// <returns></returns>
     [HttpGet("login/username/password")]
-    public ActionResult<Customer> Login(string username, string password = "no password sent. :(")
+    public ActionResult<Person> Login(string username, string password = "no password sent. :(")
     {
         //create an instance of the business layer
         Prj1_AppPlay prj1 = new Prj1_AppPlay();
         // send the loginDto to the business layer to do whatever it does.
-        Customer c = prj1.Login(username, password);
-        if (c == null)
+        Person p = prj1.Login(username, password);
+        if (p == null)
         {
             return BadRequest(new { message = "There is not yet a user with that login/password combo." });
         }

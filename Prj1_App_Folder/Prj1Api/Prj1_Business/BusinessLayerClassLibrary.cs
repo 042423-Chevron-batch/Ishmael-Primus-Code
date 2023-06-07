@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Prj1ApiModels;
-using Prj1ApiRepository;
+using Prj1_Models;
+using Prj1_Repository;
 
 
 namespace Prj1ApiBusiness
 {
-    public class Prj1_AppPlay
+    public class BusinessLayerClassLibrary
     {
         /// <summary>
         /// This method takes an int and a double and returns a string concatenation of them

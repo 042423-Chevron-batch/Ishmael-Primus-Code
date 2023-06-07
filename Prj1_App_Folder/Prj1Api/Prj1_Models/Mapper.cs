@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Prj1ApiModels;
+using Prj1_Models;
 
-namespace Prj1Models
+namespace Prj1_Models
 {
     public class Mapper
     {
@@ -13,9 +13,9 @@ namespace Prj1Models
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        public static Customer RegisterDtoToPerson(RegisterDto dto)
+        public static Person RegisterDtoToPerson(RegisterDto dto)
         {
-            return new Customer(dto.FirstName, dto.LastName, dto.LastOrderDate, dto.Remarks, dto.UserName, dto.Password);
+            return new Person(dto.FirstName, dto.LastName, dto.LastOrderDate, dto.Remarks, dto.UserName, dto.Password);
         }
 
         /// <summary>
@@ -29,9 +29,9 @@ namespace Prj1Models
             return p;
         }
 
-        public static StoreData AdoToStore(Guid guid, string v1, string v2)
+        public static Store AdoToStore(Guid guid, string v1, string v2)
         {
-            return new StoreData(guid, v1);
+            return new Store(guid, v1, v2);
         }
     }
 }
