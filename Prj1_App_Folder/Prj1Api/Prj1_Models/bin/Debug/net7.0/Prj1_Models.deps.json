@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Prj1_Models/1.0.0": {
+        "runtime": {
+          "Prj1_Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Prj1_Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
