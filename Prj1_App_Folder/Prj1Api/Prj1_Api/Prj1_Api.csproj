@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Prj1ApiBusiness\Prj1ApiBusiness.csproj" />
-    <ProjectReference Include="..\Prj1ApiModels\Prj1ApiModels.csproj" />
+    <ProjectReference Include="..\Prj1_Business\Prj1_Business.csproj" />
+    <ProjectReference Include="..\Prj1_Models\Prj1_Models.csproj" />
   </ItemGroup>
 
 </Project>

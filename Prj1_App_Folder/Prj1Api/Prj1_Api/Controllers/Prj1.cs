@@ -28,7 +28,7 @@ public class Prj1Controller : ControllerBase
 
         if (ModelState.IsValid)
         {
-            Prj1_AppPlay prj1 = new Prj1_AppPlay();
+            BusinessLayerClassLibrary prj1 = new BusinessLayerClassLibrary();
             // i'll call a method on the business layer that will do the appropriate thing with the Customer object.
             // I will return the  unputted customer back to the user along with the URI to GET the person entity so it can be used, if the FE wants to use it.
             Person ret = prj1.Register(x);
@@ -49,7 +49,7 @@ public class Prj1Controller : ControllerBase
     public ActionResult<List<Store>> Stores()
     {
         // create an instance of the business layer
-        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        BusinessLayerClassLibrary prj1 = new BusinessLayerClassLibrary();
         // call the business layer method to get the stores.
         List<Store> stores = prj1.GetStores();
         // return the stores
@@ -69,14 +69,14 @@ public class Prj1Controller : ControllerBase
     public ActionResult<Person> Login(string username, string password = "no password sent. :(")
     {
         //create an instance of the business layer
-        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        BusinessLayerClassLibrary prj1 = new BusinessLayerClassLibrary();
         // send the loginDto to the business layer to do whatever it does.
         Person p = prj1.Login(username, password);
         if (p == null)
         {
             return BadRequest(new { message = "There is not yet a user with that login/password combo." });
         }
-        else return Ok(c);
+        else return Ok(p);
     }
 
     /// <summary>
@@ -88,7 +88,7 @@ public class Prj1Controller : ControllerBase
     public ActionResult<Store> StoreInfo(Guid storeId)
     {
         // create an instance of the business layer
-        Prj1_AppPlay prj1 = new Prj1_AppPlay();
+        BusinessLayerClassLibrary prj1 = new BusinessLayerClassLibrary();
         // call the business layer method to get the stores.
         if (ModelState.IsValid)
         {

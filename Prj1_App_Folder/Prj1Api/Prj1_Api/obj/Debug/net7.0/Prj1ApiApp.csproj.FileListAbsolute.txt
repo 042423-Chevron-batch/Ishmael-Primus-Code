@@ -43,3 +43,13 @@ C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiApp\
 C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiApp\obj\Debug\net7.0\Prj1ApiApp.pdb
 c:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiApp\obj\Debug\net7.0\Prj1ApiApp.genruntimeconfig.cache
 c:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiApp\obj\Debug\net7.0\ref\Prj1ApiApp.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\refint\Prj1ApiApp.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Api\obj\Debug\net7.0\Prj1ApiApp.pdb
