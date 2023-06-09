@@ -153,7 +153,7 @@ namespace Prj1_Repository
                         Product p = Mapper.AdoToProduct(id, name, q, desc);
                         s.Inventory?.Add(p);
 
-										} while (res.Read());
+					} while (res.Read());
                     flubby.Close();
                     return s!;
                 }

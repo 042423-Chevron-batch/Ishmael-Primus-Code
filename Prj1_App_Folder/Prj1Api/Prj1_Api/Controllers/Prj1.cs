@@ -32,7 +32,7 @@ public class Prj1Controller : ControllerBase
             // i'll call a method on the business layer that will do the appropriate thing with the Customer object.
             // I will return the  unputted customer back to the user along with the URI to GET the person entity so it can be used, if the FE wants to use it.
             Person ret = prj1.Register(x);
-            if (ret != null) return Created("url/path/to/this/resource", ret);
+            if (ret != null) return Created("http://localhost:5202", ret);
 
             // string ret = String.Concat(x.Fname, " ", x.Lname, "is", x.age, "years old. His email is ", x.Email, ".");
             // string ret1 = $"{x.Fname} {x.Lname} is {x.age} years old. His email is {x.Email}.";
