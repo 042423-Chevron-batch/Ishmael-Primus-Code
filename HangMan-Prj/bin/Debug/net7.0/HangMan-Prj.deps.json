@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "HangMan-Prj/1.0.0": {
+        "runtime": {
+          "HangMan-Prj.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HangMan-Prj/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

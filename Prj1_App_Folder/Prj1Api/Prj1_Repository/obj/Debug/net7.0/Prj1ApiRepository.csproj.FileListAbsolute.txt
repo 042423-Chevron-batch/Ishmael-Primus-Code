@@ -1,0 +1,15 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\bin\Debug\net7.0\Prj1ApiRepository.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\bin\Debug\net7.0\Prj1ApiRepository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\bin\Debug\net7.0\Prj1ApiRepository.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\bin\Debug\net7.0\Prj1ApiModels.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\bin\Debug\net7.0\Prj1ApiModels.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.csproj.CopyComplete
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\refint\Prj1ApiRepository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\Prj1ApiRepository.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1ApiRepository\obj\Debug\net7.0\ref\Prj1ApiRepository.dll
