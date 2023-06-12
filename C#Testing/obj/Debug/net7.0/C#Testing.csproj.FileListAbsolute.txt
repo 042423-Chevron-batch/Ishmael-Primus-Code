@@ -1,0 +1,15 @@
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\bin\Debug\net7.0\C#Testing.exe
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\bin\Debug\net7.0\C#Testing.deps.json
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\bin\Debug\net7.0\C#Testing.runtimeconfig.json
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\bin\Debug\net7.0\C#Testing.dll
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\bin\Debug\net7.0\C#Testing.pdb
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.csproj.AssemblyReference.cache
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.AssemblyInfoInputs.cache
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.AssemblyInfo.cs
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.csproj.CoreCompileInputs.cache
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.dll
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\refint\C#Testing.dll
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.pdb
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\C#Testing.genruntimeconfig.cache
+C:\Users\Ish\Documents\Ishmael-Primus-Code-\C#Testing\obj\Debug\net7.0\ref\C#Testing.dll
