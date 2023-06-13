@@ -10,3 +10,15 @@ C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Models
 C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\refint\Prj1_Models.dll
 C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.pdb
 C:\Users\ishma\Revature\Ishmael-Primus-Code-\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\ref\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Debug\net7.0\Prj1_Models.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Debug\net7.0\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Debug\net7.0\Prj1_Models.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.csproj.AssemblyReference.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.AssemblyInfoInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.AssemblyInfo.cs
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.csproj.CoreCompileInputs.cache
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\refint\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\Prj1_Models.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\obj\Debug\net7.0\ref\Prj1_Models.dll
