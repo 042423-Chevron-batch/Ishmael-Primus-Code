@@ -1,0 +1,13 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Business.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Business.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Business.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\runtimes\win-x64\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\runtimes\win-x86\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Repository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Models.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Business\bin\Release\net7.0\publish\Prj1_Repository.pdb
