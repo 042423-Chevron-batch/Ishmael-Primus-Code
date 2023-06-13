@@ -126,7 +126,7 @@ namespace Prj1_Repository
         }
 
         /// <summary>
-        /// this method uses the store id to retrieve allthe store data including it's inventory.
+        /// this method uses the store id to retrieve all the store data including it's inventory.
         /// </summary>
         /// <param name="storeId"></param>
         /// <returns></returns>
@@ -188,7 +188,7 @@ namespace Prj1_Repository
         /// <returns></returns>
         public bool UserNamePasswordInDb(string username, string password)
         {
-            // check to see if thise username/password combo is in the Db.
+            // check to see if this username/password combo is in the Db.
             SqlCommand comm = new SqlCommand("SELECT * FROM Customer WHERE UserName = @username AND Password = @password;", flubby);
             comm.Parameters.AddWithValue("@username", username);
             comm.Parameters.AddWithValue("@password", password);
@@ -220,6 +220,131 @@ namespace Prj1_Repository
                 Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
                 flubby.Close();
                 return false;
+            }
+        }
+
+        //Get the products from the Db
+        public List<Product> GetProducts()
+        {
+            SqlCommand comm = new SqlCommand("SELECT * FROM Products;", flubby);
+            flubby.Open();
+            List<Product> products = new List<Product>();
+            SqlDataReader res;
+            try
+            {
+                res = comm.ExecuteReader();
+                if (res.Read())
+                {
+                    do
+                    {
+                        Guid id = res.GetGuid(0);
+                        string name = res.GetString(1);
+                        int q = res.GetInt32(2);
+                        string desc = res.GetString(3);
+                        Product p = Mapper.AdoToProduct(id, name, q, desc);
+                        products.Add(p);
+                    } while (res.Read());
+                    flubby.Close();
+                    return products;
+                }
+                else
+                {
+                    flubby.Close();
+                    return products;
+                }
+            }
+            catch (SqlException ex)
+            {
+                // write this exception to a file, exception.
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return products;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return products;
+            }
+        }
+
+        // Select a store by its address
+        public Store GetStoreByAddress(string address)
+        {
+            SqlCommand comm = new SqlCommand("SELECT * FROM Stores WHERE Address = @address;", flubby);
+            comm.Parameters.AddWithValue("@address", address);
+            flubby.Open();
+            SqlDataReader res;
+            try
+            {
+                res = comm.ExecuteReader();
+                if (res.Read())
+                {
+                    Guid id = res.GetGuid(0);
+                    string name = res.GetString(1);
+                    string addr = res.GetString(2);
+                    Store s = Mapper.AdoToStore(id, name, addr);
+                    flubby.Close();
+                    return s;
+                }
+                else
+                {
+                    flubby.Close();
+                    return null;
+                }
+            }
+            catch (SqlException ex)
+            {
+                // write this exception to a file, exception.
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return null;
+            }
+        }
+
+        // Registered user can select a store by its address
+        public Store GetStoreByAddress(string address, Guid customerId)
+        {
+            SqlCommand comm = new SqlCommand("SELECT * FROM Stores WHERE Address = @address;", flubby);
+            comm.Parameters.AddWithValue("@address", address);
+            flubby.Open();
+            SqlDataReader res;
+            try
+            {
+                res = comm.ExecuteReader();
+                if (res.Read())
+                {
+                    Guid id = res.GetGuid(0);
+                    string name = res.GetString(1);
+                    string addr = res.GetString(2);
+                    Store s = Mapper.AdoToStore(id, name, addr);
+                    flubby.Close();
+                    return s;
+                }
+                else
+                {
+                    flubby.Close();
+                    return null;
+                }
+            }
+            catch (SqlException ex)
+            {
+                // write this exception to a file, exception.
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"the exception was {ex.Message} - {ex.InnerException}");
+                flubby.Close();
+                return null;
             }
         }
 

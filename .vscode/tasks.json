@@ -36,6 +36,67 @@
                 "${workspaceFolder}/HangMan-Prj/HangMan-Prj.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "type": "docker-build",
+            "label": "docker-build: debug",
+            "dependsOn": [
+                "build"
+            ],
+            "dockerBuild": {
+                "tag": "ishmaelprimuscode:dev",
+                "target": "base",
+                "dockerfile": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Dockerfile",
+                "context": "${workspaceFolder}",
+                "pull": true
+            },
+            "netCore": {
+                "appProject": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Prj1_Api.csproj"
+            }
+        },
+        {
+            "type": "docker-build",
+            "label": "docker-build: release",
+            "dependsOn": [
+                "build"
+            ],
+            "dockerBuild": {
+                "tag": "ishmaelprimuscode:latest",
+                "dockerfile": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Dockerfile",
+                "context": "${workspaceFolder}",
+                "platform": "linux/amd64",
+                "pull": true
+            },
+            "netCore": {
+                "appProject": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Prj1_Api.csproj"
+            }
+        },
+        {
+            "type": "docker-run",
+            "label": "docker-run: debug",
+            "dependsOn": [
+                "docker-build: debug"
+            ],
+            "dockerRun": {
+                "os": "Windows"
+            },
+            "netCore": {
+                "appProject": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Prj1_Api.csproj",
+                "enableDebugging": true
+            }
+        },
+        {
+            "type": "docker-run",
+            "label": "docker-run: release",
+            "dependsOn": [
+                "docker-build: release"
+            ],
+            "dockerRun": {
+                "os": "Windows"
+            },
+            "netCore": {
+                "appProject": "${workspaceFolder}/Prj1_App_Folder/Prj1Api/Prj1_Api/Prj1_Api.csproj"
+            }
         }
     ]
 }
