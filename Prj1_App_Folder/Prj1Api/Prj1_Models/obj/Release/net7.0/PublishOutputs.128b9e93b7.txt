@@ -1,0 +1,3 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Release\net7.0\publish\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Release\net7.0\publish\Prj1_Models.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\Prj1Api\Prj1_Models\bin\Release\net7.0\publish\Prj1_Models.pdb

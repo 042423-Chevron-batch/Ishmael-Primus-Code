@@ -20,7 +20,7 @@ namespace Prj1_Business
         {
             string ret = $"{x} {y}";
             return ret;
-        } 
+        }
 
         public List<Store> GetStores()
         {
@@ -39,7 +39,7 @@ namespace Prj1_Business
         public Person Login(string username, string password)
         {
             Prj1_RepoLayerClassLibrary repo = new Prj1_RepoLayerClassLibrary();
-            
+
             // send the username and password to repo layer.
             Person p = repo.GetUserByUnamePword(username, password);
             return p;
@@ -73,85 +73,112 @@ namespace Prj1_Business
             return null;
         }
 
-        public Store StoreInfo(Guid storeId)
+        public List<string> GetStoreAdress()
+        {
+
+            Prj1_RepoLayerClassLibrary repo = new Prj1_RepoLayerClassLibrary();
+
+            List<Store> stores = repo.GetStores();
+
+            if (stores.Count > 0)
+            {
+
+                List<string> Addresses = stores.Select(store => store.Address).ToList();
+                return Addresses;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        // Registered user can select a store by its address
+        public Store GetStoreByAddress(string address)
         {
             Prj1_RepoLayerClassLibrary repo = new Prj1_RepoLayerClassLibrary();
-            Store s = repo.StoreInfo(storeId);
-            if (s != null) return s;
-            else return null;
-        }  
 
-        // /// <summary>
-        // ///
-        // /// </summary>
-        // /// <param name="store"></param>
-        // /// <param name="product"></param>
-        // /// <param name="customer"></param>
-        // /// <param name="quantity"></param>
-        // /// <returns></returns>/
-        // public Order CreateOrder(StoreData store, Product product, Customer customer, int quantity)
-        // {
-        //     Order newOrder = new Order
-        //     {
-        //         Store = store,
-        //         Product = product,
-        //         Customer = customer,
-        //         Quantity = quantity
-        //     };
+            Store store = repo.GetStoreByAddress(address);
 
-        //     return newOrder;
-        // }
+            if (store != null)
+            {
+                return store;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
-        // /// <summary>
-        // ///  send a string with customer fname, and lname spearated by a space.
-        // /// </summary>
-        // /// <param name="x"></param>
-        // /// <returns></returns>
-        // public static Customer RegisterCustomer(string x)
-        // {
-        //     string[] xx = x.Split(' ');
+    }
+}
 
-        //     if (xx.Length >= 3 && Int32.TryParse(xx[2], out int xx1))
-        //     {
-        //         return new Customer(xx[0], xx[1]);
-        //     }
-        //     else
-        //     {
-        //         return new Customer(xx[0], "Primus");
-        //     }
-        // }
+    // /// <summary>
+    // ///
+    // /// </summary>
+    // /// <param name="store"></param>
+    // /// <param name="product"></param>
+    // /// <param name="customer"></param>
+    // /// <param name="quantity"></param>
+    // /// <returns></returns>/
+    // public Order CreateOrder(StoreData store, Product product, Customer customer, int quantity)
+    // {
+    //     Order newOrder = new Order
+    //     {
+    //         Store = store,
+    //         Product = product,
+    //         Customer = customer,
+    //         Quantity = quantity
+    //     };
 
+    //     return newOrder;
+    // }
 
-        // /// <summary>
-        // /// 
-        // /// </summary>
-        // /// <param name="st"></param>
-        // /// <returns></returns>
-        // /// 
-        // public static Store? ValidateUserInput(string st)
-        // {
-        //     string st1 = st.ToUpper();
-        //     if (st1 != "")
-        //     {
-        //         if (st1[0].Equals('W'))
-        //         {
-        //             return Store.Walmart;
-        //         }
-        //         else if (st1[0].Equals('K'))
-        //         {
-        //             return Store.Kroger;
-        //         }
-        //         else if (st1[0].Equals('H'))
-        //         {
-        //             return Store.HEB;
-        //         }
-        //     }
-        //     return null;
-        // }
+    // /// <summary>
+    // ///  send a string with customer fname, and lname spearated by a space.
+    // /// </summary>
+    // /// <param name="x"></param>
+    // /// <returns></returns>
+    // public static Customer RegisterCustomer(string x)
+    // {
+    //     string[] xx = x.Split(' ');
+
+    //     if (xx.Length >= 3 && Int32.TryParse(xx[2], out int xx1))
+    //     {
+    //         return new Customer(xx[0], xx[1]);
+    //     }
+    //     else
+    //     {
+    //         return new Customer(xx[0], "Primus");
+    //     }
+    // }
 
 
-    }// EoC
-}// EoN
+    // /// <summary>
+    // /// 
+    // /// </summary>
+    // /// <param name="st"></param>
+    // /// <returns></returns>
+    // /// 
+    // public static Store? ValidateUserInput(string st)
+    // {
+    //     string st1 = st.ToUpper();
+    //     if (st1 != "")
+    //     {
+    //         if (st1[0].Equals('W'))
+    //         {
+    //             return Store.Walmart;
+    //         }
+    //         else if (st1[0].Equals('K'))
+    //         {
+    //             return Store.Kroger;
+    //         }
+    //         else if (st1[0].Equals('H'))
+    //         {
+    //             return Store.HEB;
+    //         }
+    //     }
+    //     return null;
+    // }
 
 
 

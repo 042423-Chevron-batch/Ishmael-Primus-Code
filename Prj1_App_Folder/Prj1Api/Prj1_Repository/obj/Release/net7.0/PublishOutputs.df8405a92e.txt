@@ -1,0 +1,11 @@
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\Prj1_Repository.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\Prj1_Repository.deps.json
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\Prj1_Repository.pdb
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\runtimes\win-arm64\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\runtimes\win-x64\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\runtimes\win-x86\native\sni.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\Prj1_Models.dll
+C:\Users\ishma\Revature\Ishmael-Primus-Code\Prj1_App_Folder\out\Prj1_Models.pdb

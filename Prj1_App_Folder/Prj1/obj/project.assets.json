@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1\\Prj1.csproj",
+      "projectUniqueName": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code\\Prj1_App_Folder\\Prj1\\Prj1.csproj",
       "projectName": "Prj1",
-      "projectPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1\\Prj1.csproj",
+      "projectPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code\\Prj1_App_Folder\\Prj1\\Prj1.csproj",
       "packagesPath": "C:\\Users\\ishma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code-\\Prj1_App_Folder\\Prj1\\obj\\",
+      "outputPath": "C:\\Users\\ishma\\Revature\\Ishmael-Primus-Code\\Prj1_App_Folder\\Prj1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
